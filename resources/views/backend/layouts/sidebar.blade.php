@@ -19,9 +19,21 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-university nav-icon"></i>
-            <p>Base Data</p>
+          <a href="{{ route('backend.jenis.index') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Jenis</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('backend.satuan.index') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Satuan</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('backend.barang.index') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Barang</p>
           </a>
         </li>
       </ul>
