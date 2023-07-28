@@ -5,6 +5,7 @@ use App\Http\Controllers\JenisController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\SatuanController;
 use App\Http\Livewire\Kategori\MainIndex;
+use App\Http\Livewire\MasterData\SupplierMainIndex;
 use Illuminate\Support\Facades\Route;
 
 
@@ -17,6 +18,8 @@ Route::middleware(['auth'])->group(function () {
         Route::resource('jenis', JenisController::class);
         Route::resource('satuan', SatuanController::class);
         Route::resource('barang', BarangController::class);
+
+        Route::get('/supplier', SupplierMainIndex::class)->name('supplier');
     });
 });
 

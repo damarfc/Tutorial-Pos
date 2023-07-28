@@ -36,6 +36,12 @@
             <p>Data Barang</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="{{ route('backend.supplier') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Supplier</p>
+          </a>
+        </li>
       </ul>
     </li>
 
